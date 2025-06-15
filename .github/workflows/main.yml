@@ -24,4 +24,6 @@ jobs:
         ./configure
         make
     - name: install
-      run: cp nasm /home/codespace/.local/bin
+      run: |
+        cd nasm-2.16.03
+        cp nasm /home/codespace/.local/bin
