@@ -1,4 +1,4 @@
-  name: Set up NASM
+name: Set up NASM
 
 on:
   push:
@@ -7,8 +7,11 @@ on:
     branches: [ "main" ]
 
 jobs:
-    build:
-      steps:
-      - name: download
-        run: wget https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: download
+      run: wget https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
           
