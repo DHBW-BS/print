@@ -6,10 +6,7 @@
     # NASM version to install
     version: # default is 2.16.01
     # Force or deny compilation from source code
-    from-source: # optional
+    from-source: true
     # Override platform selection
-One of: `dos`, `linux`, `macosx`, `win32`, `win64`
-See https://www.nasm.us/pub/nasm/releasebuilds/ for available platforms.
-
-    platform: # optional
+    platform: linux
           
