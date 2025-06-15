@@ -26,4 +26,5 @@ jobs:
     - name: install
       run: |
         cd nasm-2.16.03
-        cp nasm /home/codespace/.local/bin
+        mkdir -p /opt/local/bin
+        cp nasm /opt/local/bin
