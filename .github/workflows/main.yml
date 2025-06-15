@@ -6,8 +6,8 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
     - name: download
