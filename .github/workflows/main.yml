@@ -1,13 +1,8 @@
   name: Set up NASM
 
   jobs:
-    install:
-      uses: ilammy/setup-nasm@v1.5.1
-      with:
-        # NASM version to install
-        version: # default is 2.16.01
-        # Force or deny compilation from source code
-        from-source: true
-        # Override platform selection
-        platform: 'linux'
+    build:
+    steps:
+      - name: download
+      run: wget https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
           
