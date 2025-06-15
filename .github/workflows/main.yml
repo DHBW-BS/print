@@ -16,3 +16,4 @@ jobs:
       run: wget https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
     - name: unpack
       run: tar xvfz nasm-2.16.03.tar.gz
+      run: echo `pwd`
