@@ -1,13 +1,18 @@
-            - name: Set up NASM
-  # You may pin to the exact commit or the version.
-  # uses: ilammy/setup-nasm@13cbeb366c45c4379d3478cdcbadd8295feb5028
-  uses: ilammy/setup-nasm@v1.5.2
-  with:
-    # NASM version to install
-    version: # default is 2.16.01
-    # Force or deny compilation from source code
-    from-source: true
-    # Override platform selection
+name: Set up NASM
 
-    platform: # optional
-          
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: download
+      run: wget https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz
+    - name: unpack
+      tar xvfz nasm-2.16.03.tar.gz
