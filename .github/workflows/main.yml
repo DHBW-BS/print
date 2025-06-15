@@ -1,12 +1,13 @@
-  #          - name: Set up NASM
-  # You may pin to the exact commit or the version.
-  # uses: ilammy/setup-nasm@13cbeb366c45c4379d3478cdcbadd8295feb5028
-  uses: ilammy/setup-nasm@v1.5.1
-  with:
-    # NASM version to install
-    version: # default is 2.16.01
-    # Force or deny compilation from source code
-    from-source: true
-    # Override platform selection
-    platform: linux
+  name: Set up NASM
+
+  jobs:
+    install:
+      uses: ilammy/setup-nasm@v1.5.1
+      with:
+        # NASM version to install
+        version: # default is 2.16.01
+        # Force or deny compilation from source code
+        from-source: true
+        # Override platform selection
+        platform: 'linux'
           
