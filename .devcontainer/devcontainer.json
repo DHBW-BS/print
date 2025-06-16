@@ -4,5 +4,6 @@
     "dockerfile": "Dockerfile"
   },
 
-  "postCreateCommand": "wget https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz"
+  "postCreateCommand": "wget https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/nasm-2.16.03.tar.gz",
+  "postCreateCommand": "tar xvfz nasm-2.16.03.tar.gz"
 }
