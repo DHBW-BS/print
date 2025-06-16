@@ -1,3 +1,5 @@
 {
   "name": "Betriebssysteme"
+
+  "postCreateCommand": "bash /codespaces/Uebungen/.install/install.sh"
 }
